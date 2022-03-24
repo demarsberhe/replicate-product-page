@@ -1,0 +1,33 @@
+*{
+  margin: 0px;
+  padding: 0px;
+}
+ul{
+  list-style: none;
+}
+nav {
+  display: flex;
+  position: fixed;
+  top: 0px;
+  height: 80px;
+  width: 100%;
+  background: white;
+  font-size: 0.8rem;
+  font-weight: bold;
+  justify-content: space-around;
+
+  #title{
+
+  }
+
+  #nav-list-left{
+    display: flex;
+    
+  }
+
+  #nav-list-right{
+    display: flex;
+
+  }
+
+}
