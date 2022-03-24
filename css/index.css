@@ -1,6 +1,7 @@
 * {
   margin: 0px;
   padding: 0px;
+  background-color: white;
 }
 
 ul {
@@ -17,10 +18,183 @@ nav {
   font-size: 0.8rem;
   font-weight: bold;
   justify-content: space-around;
+  color: #4d4d4d;
 }
-nav #nav-list-left {
+nav #title {
+  padding: 5px;
+  background-color: #333333;
+  color: white;
+  margin: 10px;
+  font-size: 2.5rem;
+}
+nav #title:hover {
+  background-color: gray;
+}
+nav #nav-list-left ul {
+  display: flex;
+  position: fixed;
+  left: 5px;
+  top: 20px;
+}
+nav #nav-list-left ul li {
+  margin: 10px;
+}
+nav #nav-list-right ul {
+  display: flex;
+  position: fixed;
+  right: 5px;
+  top: 20px;
+}
+nav #nav-list-right ul li {
+  margin: 10px;
+}
+
+#main-product {
+  display: flex;
+  margin-top: 80px;
+  width: 100%;
+}
+#main-product #product-text, #main-product #product-img {
+  width: 50%;
+  margin: 10px;
+}
+#main-product #product-text {
+  color: #4d4d4d;
+  padding: 0px 10px;
+}
+#main-product #product-text h2 {
+  padding-bottom: 10px;
+  color: black;
+}
+#main-product #product-text p {
+  padding-bottom: 10px;
+}
+#main-product #product-text #product-details h3 {
+  color: black;
+}
+#main-product #product-text #colors {
+  display: flex;
+  justify-content: space-between;
+}
+#main-product #product-text #colors p {
+  padding-top: 10px;
+}
+#main-product #product-text #colors ul {
   display: flex;
 }
-nav #nav-list-right {
+#main-product #product-text #colors ul li {
+  margin: 10px;
+}
+#main-product #product-text #size {
   display: flex;
+  justify-content: space-between;
+}
+#main-product #product-text #size p {
+  padding-top: 10px;
+}
+#main-product #product-text #size ul {
+  display: flex;
+}
+#main-product #product-text #size ul li {
+  margin: 10px;
+}
+#main-product #product-text #product-details {
+  margin-top: 30px;
+}
+#main-product #product-text #product-details p {
+  margin: 10px 0px;
+}
+#main-product #product-img img {
+  width: 100%;
+  height: auto;
+}
+
+#shop-more {
+  color: #4d4d4d;
+  margin: 10px;
+}
+#shop-more h3 {
+  text-align: center;
+  color: #4d4d4d;
+  margin: 20px;
+}
+#shop-more #shop-more-figures {
+  display: flex;
+  justify-content: center;
+}
+#shop-more #shop-more-figures figure {
+  width: 30%;
+  margin: 0px 20px;
+}
+#shop-more #shop-more-figures figure img {
+  width: 100%;
+}
+
+footer {
+  border: 1px solid gray;
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  color: #4d4d4d;
+}
+footer #footer-shop {
+  padding: 20px;
+}
+footer #footer-shop li {
+  margin: 10px;
+}
+footer #footer-Htik {
+  padding: 20px;
+}
+footer #footer-Htik li {
+  margin: 10px;
+}
+footer p {
+  position: absolute;
+  bottom: 5px;
+  right: 0px;
+}
+
+#black-hoodie:hover {
+  background-color: black;
+  color: white;
+}
+@else-if ($color == gray) {
+  #black-hoodie:hover {
+    background-color: gray;
+    color: white;
+  }
+}
+@else-if ($color == brown) {
+  #black-hoodie:hover {
+    background-color: brown;
+    color: white;
+  }
+}
+
+@else-if ($color == gray) {
+  #brown-hoodie:hover {
+    background-color: gray;
+    color: white;
+  }
+}
+@else-if ($color == brown) {
+  #brown-hoodie:hover {
+    background-color: brown;
+    color: white;
+  }
+}
+
+@else-if ($color == gray) {
+  #gray-hoodie:hover {
+    background-color: gray;
+    color: white;
+  }
+}
+@else-if ($color == brown) {
+  #gray-hoodie:hover {
+    background-color: brown;
+    color: white;
+  }
 }

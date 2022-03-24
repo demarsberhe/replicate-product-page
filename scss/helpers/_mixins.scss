@@ -1,0 +1,14 @@
+@mixin item-color($color){
+  @if($color == black){
+        background-color: black;
+        color: white;
+      }
+  @else-if($color == gray){ // hover color is not appearing
+        background-color: gray;
+        color: white;
+    }
+    @else-if($color == brown){ // hover color is not appearing
+          background-color: brown;
+          color: white;
+  }
+}
