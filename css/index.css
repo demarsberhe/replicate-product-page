@@ -48,7 +48,6 @@ nav #nav-list-right ul {
 nav #nav-list-right ul li {
   margin: 10px;
 }
-
 #main-product {
   display: flex;
   margin-top: 80px;
@@ -108,6 +107,46 @@ nav #nav-list-right ul li {
   width: 100%;
   height: auto;
 }
+#main-product #black-hoodie:hover {
+  background-color: black;
+  color: white;
+}
+@else-if ($color == gray) {
+  #main-product #black-hoodie:hover {
+    background-color: gray;
+    color: white;
+  }
+}
+@else-if ($color == brown) {
+  #main-product #black-hoodie:hover {
+    background-color: brown;
+    color: white;
+  }
+}
+@else-if ($color == gray) {
+  #main-product #brown-hoodie:hover {
+    background-color: gray;
+    color: white;
+  }
+}
+@else-if ($color == brown) {
+  #main-product #brown-hoodie:hover {
+    background-color: brown;
+    color: white;
+  }
+}
+@else-if ($color == gray) {
+  #main-product #gray-hoodie:hover {
+    background-color: gray;
+    color: white;
+  }
+}
+@else-if ($color == brown) {
+  #main-product #gray-hoodie:hover {
+    background-color: brown;
+    color: white;
+  }
+}
 
 #shop-more {
   color: #4d4d4d;
@@ -115,7 +154,6 @@ nav #nav-list-right ul li {
 }
 #shop-more h3 {
   text-align: center;
-  color: #4d4d4d;
   margin: 20px;
 }
 #shop-more #shop-more-figures {
@@ -154,47 +192,4 @@ footer p {
   position: absolute;
   bottom: 5px;
   right: 0px;
-}
-
-#black-hoodie:hover {
-  background-color: black;
-  color: white;
-}
-@else-if ($color == gray) {
-  #black-hoodie:hover {
-    background-color: gray;
-    color: white;
-  }
-}
-@else-if ($color == brown) {
-  #black-hoodie:hover {
-    background-color: brown;
-    color: white;
-  }
-}
-
-@else-if ($color == gray) {
-  #brown-hoodie:hover {
-    background-color: gray;
-    color: white;
-  }
-}
-@else-if ($color == brown) {
-  #brown-hoodie:hover {
-    background-color: brown;
-    color: white;
-  }
-}
-
-@else-if ($color == gray) {
-  #gray-hoodie:hover {
-    background-color: gray;
-    color: white;
-  }
-}
-@else-if ($color == brown) {
-  #gray-hoodie:hover {
-    background-color: brown;
-    color: white;
-  }
 }

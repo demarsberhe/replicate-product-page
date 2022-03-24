@@ -1,0 +1,52 @@
+@use 'helpers/variables';
+nav {
+  display: flex;
+  position: fixed;
+  top: 0px;
+  height: 80px;
+  width: 100%;
+  background: white;
+  font-size: 0.8rem;
+  font-weight: bold;
+  justify-content: space-around;
+  color: variables.$text-color;
+
+  #title{
+    padding: 5px;
+    background-color: variables.$nav-title-background-color;
+    color: white;
+    margin: 10px;
+    font-size: 2.5rem;
+    &:hover{
+      background-color: variables.$nav-title-background-color-hover;
+    }
+  }
+
+  #nav-list-left ul{
+    display: flex;
+    position: fixed;
+    left: 5px;
+    top: 20px;
+    li{
+      margin: 10px;
+    }
+    
+  }
+
+  #nav-list-right ul{
+    display: flex;
+    position: fixed;
+    right: 5px;
+    top: 20px;
+    li{
+      margin: 10px;
+
+    }
+    
+
+  }
+  @media (max-width: 760px){
+    
+  }
+
+}
