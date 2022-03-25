@@ -83,6 +83,13 @@ nav #nav-list-right ul li {
 #main-product #product-text #product-details h3 {
   color: black;
 }
+#main-product #product-text #product-details a {
+  text-decoration: none;
+  color: #4d4d4d;
+}
+#main-product #product-text #product-details a:hover {
+  text-decoration: underline;
+}
 #main-product #product-text #colors {
   display: flex;
   justify-content: space-between;
@@ -141,17 +148,12 @@ nav #nav-list-right ul li {
   #main-product {
     flex-direction: column;
   }
-
-  #product-text, #product-img {
+  #main-product #product-img, #main-product #product-text {
     width: 100%;
     margin: 10px;
+    padding: 10px;
   }
 }
-#product-img img {
-  width: 100%;
-  height: auto;
-}
-
 #shop-more {
   color: #4d4d4d;
   margin: 10px;
