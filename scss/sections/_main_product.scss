@@ -29,6 +29,13 @@
       h3{
         color: black;
       }
+      a{
+        text-decoration: none;
+        color: variables.$text-color;
+        &:hover{
+          text-decoration: underline;
+        }
+      }
 
     }
     #colors{
@@ -119,4 +126,3 @@
   
 
 }
-
