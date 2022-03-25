@@ -1,3 +1,5 @@
 $text-color: darken(gray, 20%);
 $nav-title-background-color: lighten(black, 20%); 
 $nav-title-background-color-hover: lighten(black,50%);
+$size-border-hover-color: lighten(black, 80%);
+$size-border-hover: 1px solid $size-border-hover-color;

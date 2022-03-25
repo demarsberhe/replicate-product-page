@@ -2,6 +2,8 @@
   margin: 0px;
   padding: 0px;
   background-color: white;
+  font-family: "Times New Roman", Times, serif;
+  box-sizing: border-box;
 }
 
 ul {
@@ -48,6 +50,12 @@ nav #nav-list-right ul {
 nav #nav-list-right ul li {
   margin: 10px;
 }
+@media (max-width: 960px) {
+  nav #title {
+    font-size: 1.5rem;
+  }
+}
+
 #main-product {
   display: flex;
   margin-top: 80px;
@@ -56,6 +64,10 @@ nav #nav-list-right ul li {
 #main-product #product-text, #main-product #product-img {
   width: 50%;
   margin: 10px;
+}
+#main-product #product-img img {
+  width: 100%;
+  height: auto;
 }
 #main-product #product-text {
   color: #4d4d4d;
@@ -103,49 +115,41 @@ nav #nav-list-right ul li {
 #main-product #product-text #product-details p {
   margin: 10px 0px;
 }
-#main-product #product-img img {
-  width: 100%;
-  height: auto;
-}
 #main-product #black-hoodie:hover {
   background-color: black;
   color: white;
 }
-@else-if ($color == gray) {
-  #main-product #black-hoodie:hover {
-    background-color: gray;
-    color: white;
+#main-product #brown-hoodie:hover {
+  background-color: brown;
+  color: white;
+}
+#main-product #gray-hoodie:hover {
+  background-color: gray;
+  color: white;
+}
+#main-product #sm-size:hover {
+  border: 1px solid #cccccc;
+}
+#main-product #med-size:hover {
+  border: 1px solid #cccccc;
+}
+#main-product #lg-size:hover {
+  border: 1px solid #cccccc;
+}
+
+@media (max-width: 960px) {
+  #main-product {
+    flex-direction: column;
+  }
+
+  #product-text, #product-img {
+    width: 100%;
+    margin: 10px;
   }
 }
-@else-if ($color == brown) {
-  #main-product #black-hoodie:hover {
-    background-color: brown;
-    color: white;
-  }
-}
-@else-if ($color == gray) {
-  #main-product #brown-hoodie:hover {
-    background-color: gray;
-    color: white;
-  }
-}
-@else-if ($color == brown) {
-  #main-product #brown-hoodie:hover {
-    background-color: brown;
-    color: white;
-  }
-}
-@else-if ($color == gray) {
-  #main-product #gray-hoodie:hover {
-    background-color: gray;
-    color: white;
-  }
-}
-@else-if ($color == brown) {
-  #main-product #gray-hoodie:hover {
-    background-color: brown;
-    color: white;
-  }
+#product-img img {
+  width: 100%;
+  height: auto;
 }
 
 #shop-more {
@@ -166,6 +170,10 @@ nav #nav-list-right ul li {
 }
 #shop-more #shop-more-figures figure img {
   width: 100%;
+}
+
+#mulberry-tee:hover, #chelsea-sweatpants:hover, #cropped-sweatshirt:hover {
+  opacity: 0.7;
 }
 
 footer {
