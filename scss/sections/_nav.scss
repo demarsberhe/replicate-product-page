@@ -1,56 +1,56 @@
 @use 'helpers/variables';
-nav {
-  display: flex;
-  position: fixed;
-  top: 0px;
-  height: 80px;
-  width: 100%;
+
+//navigation container
+.nav-style {
   background: white;
-  font-size: 0.8rem;
-  font-weight: bold;
+  font-size: 1rem;
+  font-family: "Helvetica";
   justify-content: space-around;
   color: variables.$text-color;
-
-  #title{
-    padding: 5px;
-    background-color: variables.$nav-title-background-color;
-    color: white;
-    margin: 10px;
-    font-size: 2.5rem;
-    &:hover{
-      background-color: variables.$nav-title-background-color-hover;
-    }
-  }
-
-  #nav-list-left ul{
-    display: flex;
-    position: fixed;
-    left: 5px;
-    top: 20px;
-    li{
-      margin: 10px;
-    }
-    
-  }
-
-  #nav-list-right ul{
-    display: flex;
-    position: fixed;
-    right: 5px;
-    top: 20px;
-    li{
-      margin: 10px;
-
-    }
-    
+  li:hover{
+    text-decoration: underline;
 
   }
-  @media (max-width: 960px){
-    #title{
-      font-size: 1.5rem;
-    }
-    
-
-  }
-
 }
+
+//left navigation bar
+.navbar1{
+  position: fixed;
+  left: 0;
+}
+//right navigation bar
+.navbar2{
+  position: fixed;
+  right: 0;
+}
+
+//Kith website title
+#title{
+  background-color: variables.$nav-title-background-color;
+  color: white;
+  font-size: 2rem;
+  font-weight: bold;
+  margin: auto;
+  &:hover{
+    opacity: 0.7;
+    cursor: pointer;
+  }
+}
+
+//mobile menu
+@media (max-width: 990px){
+  #title{
+    margin: auto;  
+  }
+  .nav-brand{
+    position: fixed;
+    left: 0;
+  }
+  .navbar1, .navbar2{
+    position: static;
+    padding: 10px;
+  }
+}
+
+
+  
