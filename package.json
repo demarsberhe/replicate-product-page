@@ -17,6 +17,7 @@
     "sass": "^1.49.9"
   },
   "dependencies": {
+    "dotenv": "^16.0.1",
     "gulp-autoprefixer": "^8.0.0"
   }
 }

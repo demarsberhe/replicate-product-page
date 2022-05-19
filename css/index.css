@@ -2,7 +2,7 @@
   margin: 0px;
   padding: 0px;
   background-color: white;
-  font-family: "Times New Roman", Times, serif;
+  font-family: "Times";
   box-sizing: border-box;
 }
 
@@ -10,145 +10,176 @@ ul {
   list-style: none;
 }
 
-nav {
-  display: flex;
-  position: fixed;
-  top: 0px;
-  height: 80px;
-  width: 100%;
+.nav-style {
   background: white;
-  font-size: 0.8rem;
-  font-weight: bold;
+  font-size: 1rem;
+  font-family: "Helvetica";
   justify-content: space-around;
   color: #4d4d4d;
 }
-nav #title {
-  padding: 5px;
-  background-color: #333333;
-  color: white;
-  margin: 10px;
-  font-size: 2.5rem;
-}
-nav #title:hover {
-  background-color: gray;
-}
-nav #nav-list-left ul {
-  display: flex;
-  position: fixed;
-  left: 5px;
-  top: 20px;
-}
-nav #nav-list-left ul li {
-  margin: 10px;
-}
-nav #nav-list-right ul {
-  display: flex;
-  position: fixed;
-  right: 5px;
-  top: 20px;
-}
-nav #nav-list-right ul li {
-  margin: 10px;
-}
-@media (max-width: 960px) {
-  nav #title {
-    font-size: 1.5rem;
-  }
+.nav-style li:hover {
+  text-decoration: underline;
 }
 
-#main-product {
-  display: flex;
-  margin-top: 80px;
-  width: 100%;
+.navbar1 {
+  position: fixed;
+  left: 0;
 }
-#main-product #product-text, #main-product #product-img {
-  width: 50%;
+
+.navbar2 {
+  position: fixed;
+  right: 0;
+}
+
+.navbar-toggler {
   margin: 10px;
 }
-#main-product #product-img img {
+
+#title {
+  background-color: #333333;
+  color: white;
+  font-size: 2rem;
+  font-weight: bold;
+  margin-left: 650px;
+}
+#title:hover {
+  opacity: 0.7;
+  cursor: pointer;
+}
+
+@media (max-width: 1200px) {
+  #title {
+    margin: auto;
+  }
+
+  .navbar1, .navbar2 {
+    position: static;
+    padding: 10px;
+  }
+}
+#main-product {
+  margin-top: 30px;
+  display: flex;
+  width: 100%;
+}
+
+#product-text {
+  color: #4d4d4d;
+  padding: 0px 10px;
+  width: 40%;
+  margin: 10px;
+  margin-top: 40px;
+}
+#product-text h2 a {
+  text-decoration: none;
+  color: black;
+  padding-bottom: 10px;
+}
+#product-text h2 a:hover {
+  text-decoration: underline;
+}
+#product-text p {
+  padding-bottom: 10px;
+}
+
+.product-img {
+  width: 60%;
+  margin: 10px;
+}
+.product-img img {
   width: 100%;
   height: auto;
 }
-#main-product #product-text {
-  color: #4d4d4d;
-  padding: 0px 10px;
+
+#colors {
+  display: flex;
+  justify-content: space-between;
 }
-#main-product #product-text h2 {
-  padding-bottom: 10px;
+#colors p {
+  padding-top: 10px;
+}
+#colors ul {
+  display: flex;
+}
+#colors ul li {
+  margin: 10px;
+}
+
+#black-hoodie:hover {
+  background-color: black;
+  color: white;
+  cursor: pointer;
+}
+
+#brown-hoodie:hover {
+  background-color: brown;
+  color: white;
+  cursor: pointer;
+}
+
+#gray-hoodie:hover {
+  background-color: gray;
+  color: white;
+  cursor: pointer;
+}
+
+#size {
+  display: flex;
+  justify-content: space-between;
+}
+#size p {
+  padding-top: 10px;
+}
+#size ul {
+  display: flex;
+}
+#size ul li {
+  margin: 10px;
+}
+
+#sm-size:hover {
+  border: 1px solid #cccccc;
+  cursor: pointer;
+}
+
+#med-size:hover {
+  border: 1px solid #cccccc;
+  cursor: pointer;
+}
+
+#lg-size:hover {
+  border: 1px solid #cccccc;
+  cursor: pointer;
+}
+
+#product-details {
+  margin-top: 30px;
+}
+#product-details h3 {
   color: black;
 }
-#main-product #product-text p {
-  padding-bottom: 10px;
+#product-details p {
+  margin: 10px 0px;
 }
-#main-product #product-text #product-details h3 {
-  color: black;
-}
-#main-product #product-text #product-details a {
+#product-details a {
   text-decoration: none;
   color: #4d4d4d;
 }
-#main-product #product-text #product-details a:hover {
+#product-details a:hover {
   text-decoration: underline;
 }
-#main-product #product-text #colors {
-  display: flex;
-  justify-content: space-between;
-}
-#main-product #product-text #colors p {
-  padding-top: 10px;
-}
-#main-product #product-text #colors ul {
-  display: flex;
-}
-#main-product #product-text #colors ul li {
-  margin: 10px;
-}
-#main-product #product-text #size {
-  display: flex;
-  justify-content: space-between;
-}
-#main-product #product-text #size p {
-  padding-top: 10px;
-}
-#main-product #product-text #size ul {
-  display: flex;
-}
-#main-product #product-text #size ul li {
-  margin: 10px;
-}
-#main-product #product-text #product-details {
-  margin-top: 30px;
-}
-#main-product #product-text #product-details p {
-  margin: 10px 0px;
-}
-#main-product #black-hoodie:hover {
-  background-color: black;
-  color: white;
-}
-#main-product #brown-hoodie:hover {
-  background-color: brown;
-  color: white;
-}
-#main-product #gray-hoodie:hover {
-  background-color: gray;
-  color: white;
-}
-#main-product #sm-size:hover {
-  border: 1px solid #cccccc;
-}
-#main-product #med-size:hover {
-  border: 1px solid #cccccc;
-}
-#main-product #lg-size:hover {
-  border: 1px solid #cccccc;
+
+#sizing-chart {
+  width: 300px;
+  height: auto;
 }
 
 @media (max-width: 960px) {
   #main-product {
     flex-direction: column;
   }
-  #main-product #product-img, #main-product #product-text {
+
+  .product-img, #product-text {
     width: 100%;
     margin: 10px;
     padding: 10px;
@@ -162,44 +193,106 @@ nav #nav-list-right ul li {
   text-align: center;
   margin: 20px;
 }
-#shop-more #shop-more-figures {
+
+#shop-more-figures {
   display: flex;
-  justify-content: center;
+  flex-direction: row;
 }
-#shop-more #shop-more-figures figure {
+#shop-more-figures figure {
   width: 30%;
   margin: 0px 20px;
 }
-#shop-more #shop-more-figures figure img {
+#shop-more-figures figure img {
   width: 100%;
 }
 
-#mulberry-tee:hover, #chelsea-sweatpants:hover, #cropped-sweatshirt:hover {
-  opacity: 0.7;
+.mulberry-tee-hover-img {
+  display: none;
 }
 
+#mulberry-tee:hover {
+  cursor: pointer;
+}
+#mulberry-tee:hover .mulberry-tee-hover-img {
+  display: block;
+}
+#mulberry-tee:hover .mulberry-tee-img {
+  display: none;
+}
+
+.chelsea-sweatpants-hover-img {
+  display: none;
+}
+
+#chelsea-sweatpants:hover {
+  cursor: pointer;
+}
+#chelsea-sweatpants:hover .chelsea-sweatpants-hover-img {
+  display: block;
+}
+#chelsea-sweatpants:hover .chelsea-sweatpants-img {
+  display: none;
+}
+
+.cropped-sweatshirt-hover-img {
+  display: none;
+}
+
+#cropped-sweatshirt:hover {
+  cursor: pointer;
+}
+#cropped-sweatshirt:hover .cropped-sweatshirt-hover-img {
+  display: block;
+}
+#cropped-sweatshirt:hover .cropped-sweatshirt-img {
+  display: none;
+}
+
+@media (max-width: 960px) {
+  #shop-more-figures {
+    flex-direction: column;
+  }
+  #shop-more-figures figure {
+    width: 90%;
+    margin-left: 35px;
+  }
+  #shop-more-figures figure img {
+    width: 100%;
+  }
+}
 footer {
-  border: 1px solid gray;
-  margin-top: 20px;
-  display: flex;
-  justify-content: center;
-  position: relative;
   color: #4d4d4d;
-}
-footer #footer-shop {
-  padding: 20px;
-}
-footer #footer-shop li {
-  margin: 10px;
-}
-footer #footer-Htik {
-  padding: 20px;
-}
-footer #footer-Htik li {
-  margin: 10px;
+  font-family: "Helvetica";
 }
 footer p {
-  position: absolute;
-  bottom: 5px;
-  right: 0px;
+  text-align: center;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: space-around;
+}
+.footer-links .join {
+  margin-top: 20px;
+}
+
+#footer-shop, #footer-Htik {
+  padding: 20px;
+}
+#footer-shop li, #footer-Htik li {
+  margin: 10px;
+}
+
+#emailField {
+  border-radius: 15px;
+  padding: 10px;
+  width: 50%;
+  margin: 10px 0;
+}
+
+@media (max-width: 990px) {
+  .footer-links {
+    flex-direction: column;
+    text-align: center;
+  }
 }
