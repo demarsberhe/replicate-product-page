@@ -1,7 +1,7 @@
 # replicate-product-page
 
 replicate-product-page
-The project utilizes HTML, Bootstrap, SASS to create a responsive product landing page. See "bootstrap-implementation" branch for final version. 
+The project utilizes HTML, Bootstrap, SASS to create a responsive product landing page. See "main" branch for final version. 
 - css/ folder includes the final .css output images/ folder includes the favicon scss/ folder includes all .scss files
 - helpers/ folder includes the mixin used to generate the css for the product color selector and variables that are used across all .scss files
 - sections/ folder includes the 4 scss partial files representing the 4 styled sections on the product landing page:
