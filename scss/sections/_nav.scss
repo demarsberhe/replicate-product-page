@@ -9,7 +9,6 @@
   color: variables.$text-color;
   li:hover{
     text-decoration: underline;
-
   }
 }
 
@@ -23,6 +22,9 @@
   position: fixed;
   right: 0;
 }
+.navbar-toggler{
+  margin: 10px;
+}
 
 //Kith website title
 #title{
@@ -30,7 +32,8 @@
   color: white;
   font-size: 2rem;
   font-weight: bold;
-  margin: auto;
+  margin-left: 650px;
+  
   &:hover{
     opacity: 0.7;
     cursor: pointer;
@@ -38,13 +41,9 @@
 }
 
 //mobile menu
-@media (max-width: 990px){
+@media (max-width: 1200px){
   #title{
-    margin: auto;  
-  }
-  .nav-brand{
-    position: fixed;
-    left: 0;
+    margin: auto; 
   }
   .navbar1, .navbar2{
     position: static;

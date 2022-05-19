@@ -31,26 +31,25 @@ ul {
   right: 0;
 }
 
+.navbar-toggler {
+  margin: 10px;
+}
+
 #title {
   background-color: #333333;
   color: white;
   font-size: 2rem;
   font-weight: bold;
-  margin: auto;
+  margin-left: 650px;
 }
 #title:hover {
   opacity: 0.7;
   cursor: pointer;
 }
 
-@media (max-width: 990px) {
+@media (max-width: 1200px) {
   #title {
     margin: auto;
-  }
-
-  .nav-brand {
-    position: fixed;
-    left: 0;
   }
 
   .navbar1, .navbar2 {
