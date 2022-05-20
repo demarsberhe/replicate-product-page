@@ -5,7 +5,6 @@
   background: white;
   font-size: 1rem;
   font-family: "Helvetica";
-  justify-content: space-around;
   color: variables.$text-color;
   li:hover{
     text-decoration: underline;
@@ -23,16 +22,21 @@
   right: 0;
 }
 .navbar-toggler{
-  margin: 10px;
+  //margin: 10px;
 }
 
+.navbar1, .navbar2{
+  position: static;
+  padding: 10px;
+}
 //Kith website title
 #title{
   background-color: variables.$nav-title-background-color;
   color: white;
   font-size: 2rem;
   font-weight: bold;
-  margin-left: 650px;
+  margin: auto;
+  text-decoration: none;
   
   &:hover{
     opacity: 0.7;
@@ -40,16 +44,7 @@
   }
 }
 
-//mobile menu
-@media (max-width: 1200px){
-  #title{
-    margin: auto; 
-  }
-  .navbar1, .navbar2{
-    position: static;
-    padding: 10px;
-  }
-}
+
 
 
   
